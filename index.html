@@ -8,9 +8,29 @@
     <!-- bootstrap css link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: rgba(106, 163, 236, 0.096);">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark mx-auto border-2 rounded" style="width: 90%;">
+        <div class="container-fluid text-center">
+          <a class="navbar-brand text-light" href="#">BOOK-ARCHIVE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 60%;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">About</a>
+              </li>
+          </div>
+        </div>
+      </nav>
     <header>
-        <h1 class="text-center text-dark mt-4">!!This Is Set Of Books About JavaScript!!</h1>
+        <h2 class="text-center mt-4" style="color: rgb(73, 73, 73);">!!This Is Set Of Book Archive!!</h2>
     </header>
     <!-- search tab  -->
     <div class="input-group mb-3 w-50 mx-auto mt-4">
@@ -22,10 +42,10 @@
       <div id="error" class="bg-danger w-25 mx-auto border-2 border-dark rounded text-center fw-bold"></div>
 
       <!-- null massage show  -->
-      <div id="nuull" class="bg-info w-25 mx-auto border-2 border-dark rounded text-center fw-bold"></div>
+      <div id="nuull" class="bg-info w-25 mx-auto border-2 border-dark rounded fw-bold"></div>
 
     <!-- search display card all  -->
-    <div id="search-books" class="row row-cols-1 row-cols-lg-4 g-4 mx-auto w-75 h-auto text-center"></div>
+    <div id="search-books" class="row row-cols-1 row-cols-lg-4 g-4 mx-auto w-75  mt-5"></div>
 
     <script src="book.js"></script>
 </body>
