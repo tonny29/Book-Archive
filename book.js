@@ -6,7 +6,7 @@ const allBook=()=>{
     if(searchText===''){
         const errorMassage=document.getElementById('error');
         error.innerHTML=`
-        <p>Please , Write Book Name</p>
+        <p class='text-center p-5 bg-danger rounded'>Please , Type Book Name First.</p>
         `;
     }
     else{
@@ -27,12 +27,15 @@ const displayBook=(books)=>{
         // console.log('type write a right book namwe');
         const nullMassage=document.getElementById('nuull');
         nullMassage.innerHTML=`
-        <p>can't related with book name ,please type a book name..</p>
+        <p class='text-center p-5 bg-info rounded'>Can Not Relate With Book Name <br>Please Type Book Name..</p>
     `;
     }
     else{
+        let count=0;
         books.forEach(book => {
-            console.log(book);
+            count=count+1;
+            // console.log(count);
+            // console.log(book);
             const div=document.createElement('div');
             div.classList.add('col');
             div.innerHTML=`
@@ -48,10 +51,14 @@ const displayBook=(books)=>{
                   </ul>
                   </p>
                 </div>
-                <button class="bg-info text-light fw-bold">See More About This</button>
+                <button class=" border-2 border-primary bg-info text-light fw-bold">See More About This</button>
               </div>
             `;
             findBook.appendChild(div);
         });
+       const div=document.getElementById('total-book');
+       div.innerHTML=`
+       <p class="fw-bold mx-5 text-light p-2">Total Book Found Result : ${count}</p>
+       ` ;
     }
 }
