@@ -16,6 +16,10 @@ const allBook=()=>{
     }
     const unknownText=document.getElementById('nuull');
     unknownText.textContent='';
+    const totalBook=document.getElementById('total-book');
+    totalBook.textContent='';
+    const findBook=document.getElementById('search-books');
+    findBook.textContent='';
 }
 // allBook();
 const displayBook=(books)=>{
@@ -40,7 +44,7 @@ const displayBook=(books)=>{
             div.classList.add('col');
             div.innerHTML=`
               <div onclick="details(${book.cover_i})" class="card">
-              <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="..."></img>
+              <img class="image" src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="..."></img>
                 <div class="card-body">
                   <h4 class="card-title text-center fw-bold">${book.title}</h4>
                   <p class="card-text">
