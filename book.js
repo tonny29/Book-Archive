@@ -1,4 +1,4 @@
-// console.log('bismillahiroahmanirrahim');
+// click handler \\
 const allBook=()=>{
     const searchBook=document.getElementById('search-area');
     const searchText=searchBook.value;
@@ -14,6 +14,7 @@ const allBook=()=>{
         .then(res=>res.json())
         .then(data=>displayBook(data.docs));
     }
+    // clean previous search output\\
     const unknownText=document.getElementById('nuull');
     unknownText.textContent='';
     const totalBook=document.getElementById('total-book');
@@ -22,6 +23,7 @@ const allBook=()=>{
     findBook.textContent='';
 }
 // allBook();
+// search displayBook \\
 const displayBook=(books)=>{
     // console.log(bookId);
     error.innerHTML='';
