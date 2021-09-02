@@ -57,7 +57,6 @@ const displayBook=(books)=>{
                   </ul>
                   </p>
                 </div>
-                <button class=" border-2 border-primary bg-info text-light fw-bold">See More About This</button>
               </div>
             `;
             findBook.appendChild(div);
